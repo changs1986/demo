@@ -9,6 +9,9 @@ use yii\bootstrap4\Html;
 ?>
 <div class="site-index">
     <div class="body-content">
+        <div class="alert alert-primary hide" role="alert">
+            export process start. please wait for the file
+        </div>
         <?php $form = ActiveForm::begin([
             'id' => 'search-form',
             'method' => 'get',

@@ -8,6 +8,10 @@ function checkSelection() {
 
 function download() 
 {
+    $('.alert-primary').show();
+    setInterval(function() {
+        $('.alert-primary').hide();
+    }, 2 * 1000)
     var ele = document.createElement('a');
     if (isAll) {
         ele.setAttribute('href', "/index.php?r=site/export&all="+isAll); //设置下载文件的url地址
